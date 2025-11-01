@@ -1,0 +1,60 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Илья Белов",
+      "email": "elez2006t@gmail.com",
+      "year": 2,
+      "faculty": "ИИТ"
+    }
+  ],
+  "professors": [
+    {
+      "id": 1,
+      "name": "Владислав Александрович Чеканин",
+      "email": "vladchekanin@rambler.ru",
+      "department": "ИИТ"
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "name": "Прикладная информатика",
+      "code": "09.03.03",
+      "credits": 4
+    }
+  ],
+  "departments": [
+    {
+      "id": 1,
+      "name": "ИИТ",
+      "head": "Владислав Александрович Чеканин"
+    }
+  ],
+  "grades": [
+    {
+      "id": 1,
+      "student_id": 1,
+      "course_id": 1,
+      "grade": 54
+    },
+    {
+      "id": 2,
+      "student_id": 1,
+      "course_id": 1,
+      "grade": 25
+    },
+    {
+      "id": 3,
+      "student_id": 1,
+      "course_id": 1,
+      "grade": 26
+    },
+    {
+      "id": 4,
+      "student_id": 1,
+      "course_id": 1,
+      "grade": 27
+    }
+  ]
+}

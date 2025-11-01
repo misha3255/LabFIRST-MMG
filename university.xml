@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<university>
+  <students>
+    <student>
+      <id>1</id>
+      <name>Илья Белов</name>
+      <email>elez2006t@gmail.com</email>
+      <year>2</year>
+      <faculty>ИИТ</faculty>
+    </student>
+  </students>
+  <professors>
+    <professor>
+      <id>1</id>
+      <name>Владислав Александрович Чеканин</name>
+      <email>vladchekanin@rambler.ru</email>
+      <department>ИИТ</department>
+    </professor>
+  </professors>
+  <courses>
+    <course>
+      <id>1</id>
+      <name>Прикладная информатика</name>
+      <code>09.03.03</code>
+      <credits>4</credits>
+    </course>
+  </courses>
+  <departments>
+    <department>
+      <id>1</id>
+      <name>ИИТ</name>
+      <head>Владислав Александрович Чеканин</head>
+    </department>
+  </departments>
+  <grades>
+    <grade>
+      <id>1</id>
+      <student_id>1</student_id>
+      <course_id>1</course_id>
+      <grade>54</grade>
+    </grade>
+    <grade>
+      <id>2</id>
+      <student_id>1</student_id>
+      <course_id>1</course_id>
+      <grade>25</grade>
+    </grade>
+    <grade>
+      <id>3</id>
+      <student_id>1</student_id>
+      <course_id>1</course_id>
+      <grade>26</grade>
+    </grade>
+    <grade>
+      <id>4</id>
+      <student_id>1</student_id>
+      <course_id>1</course_id>
+      <grade>27</grade>
+    </grade>
+  </grades>
+</university>

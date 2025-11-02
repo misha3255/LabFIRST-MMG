@@ -2,17 +2,17 @@
 <university>
   <students>
     <student>
-      <id>1</id>
-      <name>Илья Белов</name>
-      <email>elez2006t@gmail.com</email>
-      <year>2</year>
+      <id>2</id>
+      <name>Павел Брусиловский</name>
+      <email>pashkakakashka228@yandex.ru</email>
+      <year>1</year>
       <faculty>ИИТ</faculty>
     </student>
   </students>
   <professors>
     <professor>
       <id>1</id>
-      <name>Владислав Александрович Чеканин</name>
+      <name>Легенда Александрович Чеканин</name>
       <email>vladchekanin@rambler.ru</email>
       <department>ИИТ</department>
     </professor>
@@ -20,7 +20,7 @@
   <courses>
     <course>
       <id>1</id>
-      <name>Прикладная информатика</name>
+      <name>Прикладная математика и информатика</name>
       <code>09.03.03</code>
       <credits>4</credits>
     </course>

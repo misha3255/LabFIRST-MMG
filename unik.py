@@ -494,7 +494,7 @@ def main():
 
         # Загрузка данных из JSON для демонстрации
         json_data = load_from_json("university.json")
-        print(f"Загружено из JSON: {len(json_data.students)} студентов")
+        print(f"Загружено из JSON: Студентов - {len(json_data.students)}, Профессоров - {len(json_data.professors)} , Курсов - {len(json_data.courses)}, Руководств - {len(json_data.departments)}, Оценок - {len(json_data.grades)}")
 
         print("\n=== Демонстрация CRUD операций ===")
 
@@ -504,6 +504,21 @@ def main():
             print(f"Найден студент: {student.name} (год: {student.year})")
             update_student(json_data, 1, name="Илья Орешников", year=4)
             save_to_json(json_data, "university.json")  # Сохраняем изменения
+            save_to_xml(json_data, "university.xml")
+
+        prof = find_professor(json_data, 1)
+        if prof:
+            print(f"Найден преподаватель: {prof.name} (факультет: {prof.department})")
+            update_professor(json_data, 1, name="Легенда Александрович Чеканин")
+            save_to_json(json_data, "university.json")  # Сохраняем изменения
+            save_to_xml(json_data, "university.xml")
+
+        сourse = find_course(json_data, 1)
+        if сourse:
+            print(f"Найден курс: {сourse.name} (код: {сourse.code})")
+            update_course(json_data, 1, name="Прикладная математика и информатика")
+            save_to_json(json_data, "university.json")  # Сохраняем изменения
+            save_to_xml(json_data, "university.xml")
 
         # Демонстрация создания нового студента
         create_student(json_data, id=2, name="Павел Брусиловский", email="pashkakakashka228@yandex.ru", year=1, faculty="ИИТ")
@@ -525,15 +540,13 @@ def main():
 
         # Проверка загрузки из XML
         xml_data = load_from_xml("university.xml")
-        print(f"Данные в XML: {len(xml_data.students)} студентов")
+        print(f"Данные в XML: Студентов - {len(xml_data.students)}, Профессоров - {len(xml_data.professors)} , Курсов - {len(xml_data.courses)}, Руководств - {len(xml_data.departments)}, Оценок - {len(xml_data.grades)}")
 
         # Демонстрация обработки ошибок
         print("\n=== Демонстрация обработки ошибок ===")
         create_student(json_data, id=2, name="Платон Буревестников", email="poseidon2025@mail.ru", year=1, faculty="ИИТ")  # Дублирование ID
         find_student(json_data, 999)  # Поиск несуществующего студента
         update_student(json_data, 999, name="Новое имя")  # Обновление несуществующего студента
-
-        print("\n=== ПРОГРАММА ЗАВЕРШЕНА ===")
 
     except Exception as e:
         # Обработка критических ошибок

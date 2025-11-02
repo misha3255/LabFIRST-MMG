@@ -1,17 +1,17 @@
 {
   "students": [
     {
-      "id": 1,
-      "name": "Илья Белов",
-      "email": "elez2006t@gmail.com",
-      "year": 2,
+      "id": 2,
+      "name": "Павел Брусиловский",
+      "email": "pashkakakashka228@yandex.ru",
+      "year": 1,
       "faculty": "ИИТ"
     }
   ],
   "professors": [
     {
       "id": 1,
-      "name": "Владислав Александрович Чеканин",
+      "name": "Легенда Александрович Чеканин",
       "email": "vladchekanin@rambler.ru",
       "department": "ИИТ"
     }
@@ -19,7 +19,7 @@
   "courses": [
     {
       "id": 1,
-      "name": "Прикладная информатика",
+      "name": "Прикладная математика и информатика",
       "code": "09.03.03",
       "credits": 4
     }

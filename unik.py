@@ -502,11 +502,11 @@ def main():
         student = find_student(json_data, 1)
         if student:
             print(f"Найден студент: {student.name} (год: {student.year})")
-            update_student(json_data, 1, name="Иван Сидоров", year=6)
+            update_student(json_data, 1, name="Илья Орешников", year=4)
             save_to_json(json_data, "university.json")  # Сохраняем изменения
 
         # Демонстрация создания нового студента
-        create_student(json_data, id=2, name="Мария Петрова", email="maria@univ.ru", year=1, faculty="CS")
+        create_student(json_data, id=2, name="Павел Брусиловский", email="pashkakakashka228@yandex.ru", year=1, faculty="ИИТ")
         save_to_json(json_data, "university.json")
         save_to_xml(json_data, "university.xml")
 
@@ -529,7 +529,7 @@ def main():
 
         # Демонстрация обработки ошибок
         print("\n=== Демонстрация обработки ошибок ===")
-        create_student(json_data, id=2, name="Петр Петров", email="petr@univ.ru", year=1, faculty="CS")  # Дублирование ID
+        create_student(json_data, id=2, name="Платон Буревестников", email="poseidon2025@mail.ru", year=1, faculty="ИИТ")  # Дублирование ID
         find_student(json_data, 999)  # Поиск несуществующего студента
         update_student(json_data, 999, name="Новое имя")  # Обновление несуществующего студента
 
